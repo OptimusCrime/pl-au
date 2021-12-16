@@ -1,0 +1,25 @@
+{
+  "name": "pl-au-scripts",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "description": "",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8.1"
+  },
+  "scripts": {
+    "import": "ts-node ./src/import/run.ts"
+  },
+  "keywords": [],
+  "author": "OptimusCrime",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^17.0.0",
+    "@types/node-fetch": "^2.5.8",
+    "node-fetch": "^2.6.1",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0"
+  }
+}
