@@ -1,0 +1,10 @@
+.settings-form, .settings-information, .game-question {
+  display: flex;
+  justify-content: space-between;
+}
+label.block {
+  display: block;
+}
+.settings-select,.settings-select-block {
+  margin-bottom: 1rem;
+}

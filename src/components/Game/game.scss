@@ -1,0 +1,36 @@
+.game-information {
+  display: flex;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+.player-image, .player-image img {
+  width: 220px;
+  height: 280px;
+}
+.game-options {
+  display: flex;
+}
+.game-option {
+  margin-right: 1rem;
+  background-color: #fafafa;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  cursor: pointer;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &.correct {
+    background-color: rgb(25, 135, 84);
+    color: #fff;
+  }
+  &.wrong {
+    background-color: rgb(220, 53, 69);
+    color: #fff;
+  }
+}
+

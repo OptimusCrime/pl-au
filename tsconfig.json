@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "module": "esnext",
+    "jsx": "react",
+    "target": "es5",
+    "lib": ["es2015", "dom", "esnext"],
+    "allowJs": false,
+    "checkJs": false,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "types": ["node"],
+    "downlevelIteration": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"]
+}

@@ -1,0 +1,4 @@
+build
+coverage
+.DS_STORE
+node_modules
