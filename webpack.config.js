@@ -15,10 +15,9 @@ module.exports = (env, argv) => {
     context: sourcePath,
     output: {
       clean: true,
-      filename: '[name].js?hash=[contenthash]',
-      path: path.join(buildPath, 'assets'),
-      pathinfo: false,
-      publicPath: '/assets/'
+      filename: '[name].[contenthash].js',
+      path: buildPath,
+      publicPath: '/'
     },
     devtool: isProduction ? false : 'eval-source-map',
     resolve: {
@@ -64,10 +63,11 @@ module.exports = (env, argv) => {
     plugins: [
       new HtmlWebpackPlugin({
         template: path.join(sourcePath, 'index.html'),
-        filename: path.join(buildPath, 'index.html'),
+        path: buildPath,
+        filename: 'index.html',
       }),
       new MiniCssExtractPlugin({
-        filename: '[name].css?hash=[contenthash]'
+        filename: '[name].[contenthash].css'
       }),
     ]}
 }
