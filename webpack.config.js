@@ -15,7 +15,7 @@ module.exports = (env, argv) => {
     context: sourcePath,
     output: {
       clean: true,
-      filename: '[name].js?hash=[contenthash]',
+      filename: '[name].[contenthash].js',
       path: buildPath,
       publicPath: '/'
     },
@@ -67,7 +67,7 @@ module.exports = (env, argv) => {
         filename: 'index.html',
       }),
       new MiniCssExtractPlugin({
-        filename: '[name].css?hash=[contenthash]'
+        filename: '[name].[contenthash].css'
       }),
     ]}
 }
