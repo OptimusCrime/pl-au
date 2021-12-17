@@ -4,7 +4,7 @@ const path = require('path'),
   TerserWebpackPlugin = require('terser-webpack-plugin'),
   OptimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin");
 
-const buildPath = path.join(__dirname, 'build');
+const buildPath = path.join(__dirname, 'docs');
 const sourcePath = path.join(__dirname, 'src');
 
 module.exports = (env, argv) => {
@@ -17,7 +17,7 @@ module.exports = (env, argv) => {
       clean: true,
       filename: '[name].[contenthash].js',
       path: buildPath,
-      publicPath: '/'
+      publicPath: isProduction ? '' : '/'
     },
     devtool: isProduction ? false : 'eval-source-map',
     resolve: {

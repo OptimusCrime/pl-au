@@ -47,7 +47,7 @@ export const Game = () => {
     );
   }, [currentQuestion]);
 
-  if (players.selectedPlayers.length === currentQuestion + 1) {
+  if (players.selectedPlayers.length === currentQuestion) {
     return (
       <>
         <h1>Game complete</h1>
